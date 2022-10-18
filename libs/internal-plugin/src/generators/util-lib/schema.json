@@ -18,7 +18,7 @@
       "type": "string",
       "description": "Add tags to the project (used for linting)",
       "alias": "t"
-    }, 
+    },
     "directory": {
       "type": "string",
       "description": "Provide the library type",
@@ -29,6 +29,10 @@
           {
             "value": "store",
             "label": "store"
+          },
+          {
+            "value": "videos",
+            "label": "videos"
           },
           {
             "value": "api",
