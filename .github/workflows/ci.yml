@@ -20,4 +20,4 @@ jobs:
         with:
           fetch-depth: 0
       - uses: bahmutov/npm-install@v1
-      - run: npx nx test api
+      - run: npx nx nx affected target=test
