@@ -47,6 +47,17 @@
         "lintFilePatterns": ["apps/api/**/*.ts"]
       }
     },
+    "deploy": {
+      "executor": "@bg-hoard/internal-plugin:heroku-deploy",
+      "outputs": [],
+      "options": {
+        "distLocation": "dist/apps/api",
+        "herokuAppName": "nx-conf-2022-prep"
+      },
+      "dependsOn": [
+        { "target": "build", "projects": "self", "params": "forward" }
+      ]
+    },
     "test": {
       "executor": "@nrwl/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
