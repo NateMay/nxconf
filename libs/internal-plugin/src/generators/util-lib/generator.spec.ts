@@ -8,7 +8,7 @@ describe('util-lib generator', () => {
   let appTree: Tree;
   const options: UtilLibGeneratorSchema = {
     name: 'test',
-    // directory: 'api'
+    directory: 'api'
   };
 
   beforeEach(() => {
@@ -17,6 +17,7 @@ describe('util-lib generator', () => {
 
   it('should run successfully', async () => {
     await generator(appTree, options);
+    // console.log(appTree)
     const config = readProjectConfiguration(appTree, 'util-test');
     expect(config).toBeDefined();
   });
