@@ -6,7 +6,7 @@ export default async function (tree: Tree, options: UtilLibGeneratorSchema) {
   await libraryGenerator(tree, {
     ...options,
     name: `util-${options.name}`,
-    tags: `${options.tags},type:util`
+    tags: `type:util,scope:${options.directory}`,
   });
   await formatFiles(tree);
 }

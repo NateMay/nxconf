@@ -1,5 +1,8 @@
-import { Injectable } from '@nestjs/common';
+import { sendNotification } from '@bg-hoard/api/util-notifications';
 import { Game } from '@bg-hoard/util-interface';
+import { Injectable } from '@nestjs/common';
+
+sendNotification('3')
 
 const games: Game[] = [
   {
