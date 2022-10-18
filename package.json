@@ -29,7 +29,6 @@
     "@nrwl/nest": "15.0.0",
     "@nrwl/node": "15.0.0",
     "@nrwl/nx-cloud": "latest",
-    "@nrwl/nx-workshop": "^0.4.5",
     "@nrwl/storybook": "15.0.0",
     "@nrwl/workspace": "15.0.0",
     "@storybook/addon-essentials": "~6.5.9",
